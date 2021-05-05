@@ -1,0 +1,17 @@
+spring:
+  autoconfigure:
+    exclude:
+      - org.springframework.cloud.aws.autoconfigure.context.ContextInstanceDataAutoConfiguration
+      - org.springframework.cloud.aws.autoconfigure.context.ContextStackAutoConfiguration
+      - org.springframework.cloud.aws.autoconfigure.context.ContextRegionProviderAutoConfiguration
+
+cloud:
+  aws:
+    region:
+      static: us-east-1
+      auto: false
+    credentials:
+      access-key: AKIAX737EPNZJSFX5T3W
+      secret-key: 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
+    end-point:
+      uri: https://sqs.us-east-1.amazonaws.com/549485575026/spring-boot-poc
